@@ -1,0 +1,83 @@
+/* Reset Inicial*/
+
+/* 1. El modelo de caja moderno comienza en la raíz */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 16px; /* base para rems */
+}
+
+/* 2. Heredan el modelo de caja todos los elementos */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Ajustes generales del body */
+body {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #000;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 4. Imágenes y medios fluidos */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 5. Formularios sin estilos raros */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/* 6. Enlaces sin subrayado ni color azul */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 7. Listas sin bullets */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 8. Tablas limpias */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 9. Variables*/
+
+:root {
+  --color-slate-900: #1f314f;
+  --color-slate-500: #68778d;
+  --color-slate-300: #d5e1ef;
+  --color-white: #ffffff;
+  --spacing-500: 40px;
+  --spacing-300: 24px;
+  --spacing-200: 16px;
+  --spacing-100: 8px;
+}
