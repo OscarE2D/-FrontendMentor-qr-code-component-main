@@ -81,3 +81,36 @@ table {
   --spacing-200: 16px;
   --spacing-100: 8px;
 }
+
+/* 10.main*/
+
+.main {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: var(--color-slate-300);
+}
+
+/* 11.Card-Container*/
+.card-container {
+  background-color: var(--color-white);
+  width: 80%;
+  height: auto;
+  max-width: 350px;
+  min-width: 250px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 1rem;
+  padding: var(--spacing-200);
+
+  box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-container img {
+  margin-bottom: var(--spacing-200);
+  border-radius: 1rem;
+}
