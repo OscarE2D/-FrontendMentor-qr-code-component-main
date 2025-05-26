@@ -4,6 +4,8 @@ _A responsive HTML + CSS solution by Oscar Echenique_
 
 This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H).
 
+A simple and responsive QR code component built as part of a Frontend Mentor challenge. This project focuses on clean HTML structure, modern CSS features, and best practices in responsive design.
+
 ## Table of contents
 
 - [Overview](#overview)
@@ -115,3 +117,11 @@ A great resource for learning modern attributes and performance techniques. Help
 
 - Website - [Oscar Echenique D.](https://github.com/OscarE2D)
 - Frontend Mentor - [@OscarE2D](https://www.frontendmentor.io/profile/OscarE2D)
+
+## How to Run Locally
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/OscarE2D/FrontendMentor-qr-code-component-main.git
+```
