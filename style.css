@@ -4,7 +4,7 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-size: 1rem; /* base para rems */
+  font-size: clamp(0.875rem, 0.6vw + 0.5rem, 1rem);
 }
 
 /* 2. Heredan el modelo de caja todos los elementos */
@@ -22,7 +22,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   background-color: var(--color-white);
-  color: #000;
+  color: var(--color-black);
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -75,7 +75,9 @@ table {
   --color-slate-900: #1f314f;
   --color-slate-500: #68778d;
   --color-slate-300: #d5e1ef;
+  --color-slate-100: #0000ff;
   --color-white: #ffffff;
+  --color-black: #000000;
   --spacing-500: 2.5rem;
   --spacing-300: 1.5rem;
   --spacing-200: 1rem;
@@ -142,7 +144,7 @@ table {
   font-size: clamp(0.875rem, 0.6vw + 0.5rem, 1rem);
   text-align: center;
   line-height: 140%;
-  letter-spacing: 0.025;
+  letter-spacing: 0.025rem;
   font-family: "Outfit", sans-serif;
   font-weight: 400;
   color: var(--color-slate-500);
@@ -154,5 +156,5 @@ table {
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--color-slate-100);
 }
