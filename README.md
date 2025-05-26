@@ -1,87 +1,117 @@
-# Frontend Mentor - QR code component
+# Frontend Mentor - QR Code Component Solution
 
-![Design preview for the QR code component coding challenge](./preview.jpg)
+_A responsive HTML + CSS solution by Oscar Echenique_
 
-## Welcome! 👋
+This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H).
 
-Thanks for checking out this front-end coding challenge.
+## Table of contents
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+## Overview
 
-## The challenge
+This challenge consisted of building a simple and responsive QR code card using only HTML and CSS. I followed a **mobile-first** approach and took this as an opportunity to dive deeper into semantic HTML, responsive design techniques, and modern CSS features.
 
-Your challenge is to build out this QR code component and get it looking as close to the design as possible.
+It also marked an important milestone for me: I used **Git and GitHub** for version control in a real project for the first time.
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+### Screenshot
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+![](./assets/screenshot.png)
 
-## Where to find everything
+### Links
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+- Solution URL: [GitHub Repository - QR code component](https://github.com/OscarE2D/FrontendMentor-qr-code-component-main)
+- Live Site URL: [GitHub Page - QR code component](https://oscare2d.github.io/FrontendMentor-qr-code-component-main/)
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+## My process
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+### Built with
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+### 📚 What I Learned
 
-## Building your project
+While working on this challenge, I faced several difficulties that turned into valuable learning experiences. One of the most interesting parts was diving deeper into the properties of the `<img>` tag:
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+```html
+<img
+  src="./assets/image-qr-code.png"
+  alt="QR code image"
+  height="300px"
+  width="300px"
+  loading="lazy"
+  decoding="async"
+  referrerpolicy="no-referrer"
+  crossorigin="anonymous"
+/>
+```
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+Before, I only used `src` and `alt`, but this time I learned how other properties like `referrerpolicy` and `crossorigin` help protect information by preventing sensitive data from being sent in headers. I also discovered `loading="lazy"` and `decoding="async"`, which improve overall performance by allowing images to load more efficiently without blocking the page flow. Until now, I wasn’t very clear on how they worked, but I really enjoyed learning about their true purpose.
 
-## Deploying your project
+In terms of responsive design, I discovered how powerful `clamp()` can be. For example, I used `clamp(1rem, 1vw + 0.5rem, 1.375rem)` for font sizes and it worked like magic, eliminating the need for media queries and providing a more natural flow across different screen sizes.
 
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
+I also made use of CSS custom properties (variables), which greatly help in keeping the code organized and make it easier to change certain values without having to search line by line. For the first time, I also wrote my own CSS reset, which was an enriching experience that helped me truly understand what each line does and how it affects the entire document.
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+Lastly, I want to highlight something very important: working with Git and GitHub. This was my first time uploading a complete project using version control, which was a personal challenge I had been meaning to tackle. Even though it wasn’t too complicated, it was essential to understand each command and its purpose in order to keep everything running smoothly.
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+### Continued development
 
-## Create a custom `README.md`
+After completing the challenge, I was left with a few important topics that I definitely need to explore further.
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+First of all, and to keep some order, I believe it’s essential to learn more about the properties of HTML tags and their main functions. Gaining a deeper understanding would help me improve both the performance and security of my pages—two aspects I hadn't paid much attention to before.
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+Secondly, I’d like to dive deeper into **CSS Grid**. While I managed to use it for layout purposes, I know it has much more potential. Mastering it would allow me to build more fluid structures and enhance the responsive design of my pages without relying so heavily on simpler solutions.
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+Lastly, another area I’m curious about is CSS functions. I’d like to identify how many there are, what they do, and how to make the most out of them. Sometimes we use them without really understanding their full potential, and I think dedicating time to this could really make a difference in future projects.
 
-## Submitting your solution
+Considering the level of this challenge, these are the key questions and areas of curiosity I’m taking with me. They represent valuable opportunities to continue growing and improving as a developer.
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+### Useful resources
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+#### 1. **Git Immersion**
 
-## Sharing your solution
+🔗 [https://gitimmersion.com/](https://gitimmersion.com/)
+📘 _A practical, step-by-step guide to mastering Git._
+This site goes beyond just listing commands — it walks you through practical exercises and real examples. Perfect for understanding not just the "how," but the "why" behind Git.
 
-There are multiple places you can share your solution:
+---
 
-1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+#### 2. **Modern HTML Explained For Beginners** – _by HTML Academy_
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+🔗 [https://htmlacademy.org/blog/html/semantic-html-guide](https://htmlacademy.org/blog/html/semantic-html-guide)
+📘 _Explains how to use semantic HTML in modern development._
+Focused on current best practices in HTML5, this guide shows how semantic tags improve SEO, accessibility, and clear structure. Great for strengthening your HTML fundamentals with a modern approach.
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+---
 
-## Got feedback for us?
+#### 3. **Every Layout – Intrinsic Design Patterns**
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+🔗 [https://every-layout.dev/](https://every-layout.dev/)
+📘 _Teaches CSS design patterns with a functional and modern approach._
+Learn to use tools like `clamp()`, `flex`, `grid`, and other advanced CSS features through a philosophy of simplicity and adaptability — without over-relying on media queries.
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+---
 
-**Have fun building!** 🚀
+#### 4. **You Might Not Need JavaScript**
+
+🔗 [https://youmightnotneedjs.com/](https://youmightnotneedjs.com/)
+📘 _Shows how many common interactions can be achieved with just HTML and CSS._
+A great resource for learning modern attributes and performance techniques. Helps you write simpler, lighter code by reducing unnecessary JavaScript usage.
+
+## Author
+
+- Website - [Oscar Echenique D.](https://github.com/OscarE2D)
+- Frontend Mentor - [@OscarE2D](https://www.frontendmentor.io/profile/OscarE2D)
