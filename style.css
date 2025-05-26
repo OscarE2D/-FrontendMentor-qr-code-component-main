@@ -91,6 +91,7 @@ table {
   display: grid;
   place-items: center;
   height: 100vh;
+  padding: var(--spacing-100);
   background-color: var(--color-slate-300);
 }
 
@@ -113,8 +114,10 @@ table {
   box-shadow: var(--box-shadow-card);
 }
 .card-container img {
-  margin-bottom: var(--spacing-100);
+  width: 100%;
+  height: auto;
   border-radius: 1rem;
+  margin-bottom: var(--spacing-100);
 }
 
 /* 11.Card-title*/
@@ -153,6 +156,7 @@ table {
 
 /* . Credits */
 .attribution {
+  padding: 1.5rem;
   font-size: clamp(0.625rem, 1vw + 0.3rem, 0.75rem);
   text-align: center;
 }
